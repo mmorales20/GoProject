@@ -115,48 +115,37 @@ func chineseSign(year int) {
 	if year%12 == 4 {
 		yearOf := "Rat"
 		fmt.Print(yearOf)
-	}
-	else if year%12 == 5 {
+	} else if year%12 == 5 {
 		yearOf := "Ox"
 		fmt.Print(yearOf)
-	}
-	else if year%12 == 6 {
+	} else if year%12 == 6 {
 		yearOf := "Tiger"
 		fmt.Print(yearOf)
-	}
-	else if year%12 == 7 {
+	} else if year%12 == 7 {
 		yearOf := "Rabbit"
 		fmt.Println(yearOf)
-	}
-	else if year%12 == 8 {
+	} else if year%12 == 8 {
 		yearOf := "Dragon"
 		fmt.Println(yearOf)
-	}
-	else if year%12 == 9 {
+	} else if year%12 == 9 {
 		yearOf := "Snake"
 		fmt.Println(yearOf)
-	}
-	else if year%12 == 10 {
+	} else if year%12 == 10 {
 		yearOf := "Horse"
 		fmt.Println(yearOf)
-	}
-	else if year%12 == 11 {
+	} else if year%12 == 11 {
 		yearOf := "Goat"
 		fmt.Println(yearOf)
-	}
-	else if year%12 == 12 {
+	} else if year%12 == 12 {
 		yearOf := "Monkey"
 		fmt.Println(yearOf)
-	}
-	else if year%12 == 1 {
+	} else if year%12 == 1 {
 		yearOf := "Rooster"
 		fmt.Println(yearOf)
-	}
-	else if year%12 == 2 {
+	} else if year%12 == 2 {
 		yearOf := "Dog"
 		fmt.Println(yearOf)
-	}
-	else if year%12 == 3 {
+	} else if year%12 == 3 {
 		yearOf := "Pig"
 		fmt.Println(yearOf)
 	}
