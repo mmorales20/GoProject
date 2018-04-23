@@ -1,0 +1,203 @@
+package main
+
+import (
+	"fmt"
+)
+
+func astroSign(month, day int) {
+	label1 := "Your astrological zodiac sign is "
+	fmt.Print(label1)
+	if month == 3 {
+		if 1 <= day && day <= 20 {
+			sign := "Pisces"
+			fmt.Println(sign)
+		} else if 21 <= day && day <= 31 {
+			sign := "Aries"
+			fmt.Println(sign)
+		}
+	} else if month == 4 {
+		if 1 <= day && day <= 19 {
+			sign := "Aries"
+			fmt.Println(sign)
+		} else if 20 <= day && day <= 30 {
+			sign := "Taurus"
+			fmt.Println(sign)
+		}
+	} else if month == 5 {
+		if 1 <= day && day <= 20 {
+			sign := "Taurus"
+			fmt.Println(sign)
+		} else if 21 <= day && day <= 31 {
+			sign := "Gemini"
+			fmt.Println(sign)
+		}
+	} else if month == 6 {
+		if 1 <= day && day <= 20 {
+			sign := "Gemini"
+			fmt.Println(sign)
+		} else if 21 <= day && day <= 30 {
+			sign := "Cancer"
+			fmt.Println(sign)
+		}
+	} else if month == 7 {
+		if 1 <= day && day <= 22 {
+			sign := "Cancer"
+			fmt.Println(sign)
+		} else if 23 <= day && day <= 31 {
+			sign := "Leo"
+			fmt.Println(sign)
+		}
+	} else if month == 8 {
+		if 1 <= day && day <= 22 {
+			sign := "Leo"
+			fmt.Println(sign)
+		} else if 23 <= day && day <= 31 {
+			sign := "Virgo"
+			fmt.Println(sign)
+		}
+	} else if month == 9 {
+		if 1 <= day && day <= 22 {
+			sign := "Vigro"
+			fmt.Println(sign)
+		} else if 23 <= day && day <= 30 {
+			sign := "Libra"
+			fmt.Println(sign)
+		}
+	} else if month == 10 {
+		if 1 <= day && day <= 22 {
+			sign := "Libra"
+			fmt.Println(sign)
+		} else if 23 <= day && day <= 31 {
+			sign := "Scorpio"
+			fmt.Println(sign)
+		}
+	} else if month == 11 {
+		if 1 <= day && day <= 21 {
+			sign := "Scorpio"
+			fmt.Println(sign)
+		} else if 22 <= day && day <= 30 {
+			sign := "Sagittarius"
+			fmt.Println(sign)
+		}
+	} else if month == 12 {
+		if 1 <= day && day <= 21 {
+			sign := "Sagittarius"
+			fmt.Println(sign)
+		} else if 22 <= day && day <= 31 {
+			sign := "Capricorn"
+			fmt.Println(sign)
+		}
+	} else if month == 1 {
+		if 1 <= day && day <= 19 {
+			sign := "Capricorn"
+			fmt.Println(sign)
+		} else if 20 <= day && day <= 31 {
+			sign := "Aqarius"
+			fmt.Println(sign)
+		}
+	} else if month == 2 {
+		if 1 <= day && day <= 18 {
+			sign := "Aquarius"
+			fmt.Println(sign)
+		} else if 19 <= day && day <= 29 {
+			sign := "Pisces"
+			fmt.Println(sign)
+		}
+	} else {
+		sign := "Please enter a valid date"
+		fmt.Println(sign)
+	}
+}
+
+func chineseSign(month, year int) {
+	label2 := "You are born in the year of the "
+	fmt.Print(label2)
+	if month == 1 || month == 2 {
+		year := year - 1
+		if year%12 == 4 {
+			yearOf := "Rat or Ox"
+			fmt.Print(yearOf)
+		} else if year%12 == 5 {
+			yearOf := "Ox or Tiger"
+			fmt.Print(yearOf)
+		} else if year%12 == 6 {
+			yearOf := "Tiger or Rabbit"
+			fmt.Print(yearOf)
+		} else if year%12 == 7 {
+			yearOf := "Rabbit or Dragon"
+			fmt.Println(yearOf)
+		} else if year%12 == 8 {
+			yearOf := "Dragon or Snake"
+			fmt.Println(yearOf)
+		} else if year%12 == 9 {
+			yearOf := "Snake or Horse"
+			fmt.Println(yearOf)
+		} else if year%12 == 10 {
+			yearOf := "Horse or Goat"
+			fmt.Println(yearOf)
+		} else if year%12 == 11 {
+			yearOf := "Goat or Monkey"
+			fmt.Println(yearOf)
+		} else if year%12 == 0 {
+			yearOf := "Monkey or Rooster"
+			fmt.Println(yearOf)
+		} else if year%12 == 1 {
+			yearOf := "Rooster or Dog"
+			fmt.Println(yearOf)
+		} else if year%12 == 2 {
+			yearOf := "Dog or Pig"
+			fmt.Println(yearOf)
+		} else if year%12 == 3 {
+			yearOf := "Pig or Rat"
+			fmt.Println(yearOf)
+		}
+		fmt.Print(" depending on Chinese New Year")
+	} else {
+		if year%12 == 4 {
+			yearOf := "Rat"
+			fmt.Print(yearOf)
+		} else if year%12 == 5 {
+			yearOf := "Ox"
+			fmt.Print(yearOf)
+		} else if year%12 == 6 {
+			yearOf := "Tiger"
+			fmt.Print(yearOf)
+		} else if year%12 == 7 {
+			yearOf := "Rabbit"
+			fmt.Println(yearOf)
+		} else if year%12 == 8 {
+			yearOf := "Dragon"
+			fmt.Println(yearOf)
+		} else if year%12 == 9 {
+			yearOf := "Snake"
+			fmt.Println(yearOf)
+		} else if year%12 == 10 {
+			yearOf := "Horse"
+			fmt.Println(yearOf)
+		} else if year%12 == 11 {
+			yearOf := "Goat"
+			fmt.Println(yearOf)
+		} else if year%12 == 0 {
+			yearOf := "Monkey"
+			fmt.Println(yearOf)
+		} else if year%12 == 1 {
+			yearOf := "Rooster"
+			fmt.Println(yearOf)
+		} else if year%12 == 2 {
+			yearOf := "Dog"
+			fmt.Println(yearOf)
+		} else if year%12 == 3 {
+			yearOf := "Pig"
+			fmt.Println(yearOf)
+		}
+	}
+}
+
+func combine(month, day, year int) {
+	astroSign(month, day)
+	chineseSign(month, year)
+}
+
+func main() {
+	combine(1,6,1998)
+}
